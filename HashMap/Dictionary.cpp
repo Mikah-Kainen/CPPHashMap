@@ -17,14 +17,18 @@ public:
 		
 	}
 
-	//TValue Get(TKey key)
-	//{
-	//	
-	//}
+	TValue Get(TKey key)
+	{
+		
+	}
 
-	//bool Set(TKey key, TValue value)
-	//{
-	//	int hash = std::hash<TKey>(key);
-	//	backingArray[backingArray.get() + hash] == nullptr)
-	//}
+	bool Set(TKey key, TValue value)
+	{
+		int hash = std::hash<TKey>(key);
+		for (int i = 0; i < backingArray[backingArray + hash].size(); i ++)
+		{
+
+		}
+		backingArray[backingArray + hash].push_back(std::pair<TKey, TValue>(key, value));
+	}
 };
