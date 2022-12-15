@@ -8,6 +8,10 @@ int main()
 {
     std::cout << "Hello World!\n";
     Dictionary<int, int> test = Dictionary<int, int>(10);
+    test.Set(5, 6);
+    test.Set(15, 3);
+    test.Set(6, 15);
+    test.Set(1, 11);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
