@@ -12,6 +12,13 @@ int main()
     test.Set(15, 3);
     test.Set(6, 15);
     test.Set(1, 11);
+
+    auto result1 = test.Get(5);
+    auto result2 = test.Get(15);
+    auto result3 = test.Get(6);
+    auto result4 = test.Get(1);
+
+    auto result5 = test.Get(3);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
