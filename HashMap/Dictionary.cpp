@@ -30,7 +30,7 @@ public:
 	int Count;
 
 	Dictionary(int startingArraySize)
-		:backingArray{new std::vector<std::pair<TKey, TValue>>[startingArraySize]}, Count{ 0 }, maxSize{startingArraySize}
+		:backingArray{ new std::vector<std::pair<TKey, TValue>>[startingArraySize] }, Count{ 0 }, maxSize{ startingArraySize }
 	{
 	}
 
