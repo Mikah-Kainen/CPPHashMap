@@ -7,32 +7,34 @@
 int main()
 {
     std::cout << "Hello World!\n";
-    Dictionary<int, int> test = Dictionary<int, int>(2);
-    //bool temp1 = test.Set(1, 1);
-    //bool temp1point5 = test.Set(2, 2);
-    //bool temp2 = test.Set(1, 2);
-    bool result1  = test.Set(5, 6);
-    bool result2  = test.Set(15, 3);
-    bool result3  = test.Set(6, 15);
-    bool result4  = test.Set(1, 11);
-    int result = test.Get(6);
-    bool result5  = test.Set(6, 6);
+    while (true)
+    {
+        Dictionary<int, int> test = Dictionary<int, int>(2);
+        //bool temp1 = test.Set(1, 1);
+        //bool temp1point5 = test.Set(2, 2);
+        //bool temp2 = test.Set(1, 2);
+        bool result1 = test.Set(5, 6);
+        bool result2 = test.Set(15, 3);
+        bool result3 = test.Set(6, 15);
+        bool result4 = test.Set(1, 11);
+        int result = test.Get(6);
+        bool result5 = test.Set(6, 6);
 
-    int notRandom = 5;
-    int  result7  = test.Get(5);
-    int  result8  = test.Get(15);
-    int  result9  = test.Get(6);
-    int  result10 = test.Get(1);
+        int notRandom = 5;
+        int  result7 = test.Get(5);
+        int  result8 = test.Get(15);
+        int  result9 = test.Get(6);
+        int  result10 = test.Get(1);
 
-    bool result11 = test.Set(1, 10);
-    int  result12 = test.Get(1);
+        bool result11 = test.Set(1, 10);
+        int  result12 = test.Get(1);
 
-    bool result13 = test.Set(50, 5);
+        bool result13 = test.Set(50, 5);
 
-    bool result14 = test.Remove(50, 3);
-    bool result15 = test.Remove(50, 5);
-    bool result16 = test.Remove(50, 5);
-
+        bool result14 = test.Remove(50, 3);
+        bool result15 = test.Remove(50, 5);
+        bool result16 = test.Remove(50, 5);
+    }
     //int  result17 = test.Get(50);
 }
 

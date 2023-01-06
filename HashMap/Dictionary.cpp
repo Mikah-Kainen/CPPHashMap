@@ -34,6 +34,11 @@ public:
 	{
 	}
 
+	~Dictionary()
+	{
+		delete[] backingArray;
+	}
+
 	TValue Get(TKey key)
 	{
 		std::hash<TKey> hash;
